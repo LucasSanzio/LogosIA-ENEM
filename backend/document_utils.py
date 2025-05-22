@@ -57,7 +57,7 @@ def carregar_conteudo_pdf_por_materia(materia):
         print("="*50)
         print(f"Documento caregado com sucesso para {materia} ({len(texto)} caracteres)")
         print("Conteúdo do PDF lido com sucesso:")
-        print(texto[:20])  # Mostra os primeiros 20 caracteres
+        print(texto[:30])  # Mostra os primeiros 30 caracteres
         return texto
     except Exception as e:
         print(f"ERRO ao extrair texto do PDF para {materia}: {str(e)}")
