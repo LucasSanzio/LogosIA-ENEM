@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos IA - Assistente ENEM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Adicionar biblioteca Marked.js para renderização de Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Logos IA - Assistente ENEM</h1>
+            <div class="materia-atual" id="materia-atual">
+                <span>Matéria: </span>
+                <span id="materia-nome">Não definida</span>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot">
+                <div class="message-content">{{ mensagem_boas_vindas }}</div>
+            </div>
+        </div>
+        
+        <div class="materia-selector" id="materia-selector">
+            <div class="materia-title">Selecione a matéria:</div>
+            <div class="materia-buttons">
+                <button class="materia-btn" data-materia="matematica">Matemática</button>
+                <button class="materia-btn" data-materia="fisica">Física</button>
+                <button class="materia-btn" data-materia="quimica">Química</button>
+                <button class="materia-btn" data-materia="biologia">Biologia</button>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem aqui...">
+            <button id="send-btn">Enviar</button>
+        </div>
+        
+        <div class="chat-actions">
+            <button id="reset-btn">Nova Conversa</button>
+            <button id="exit-btn">Encerrar</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

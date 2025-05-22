@@ -1,0 +1,329 @@
+.chat-container {
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.chat-header {
+    background-color: #4285f4;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.materia-atual {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message.user {
+    align-items: flex-end;
+}
+
+.message-content {
+    padding: 12px 15px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.user .message-content {
+    background-color: #4285f4;
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+.bot .message-content {
+    background-color: #e9e9eb;
+    color: #333;
+    border-bottom-left-radius: 5px;
+    /* Estilos para melhorar a renderização de Markdown */
+    overflow-x: auto;
+}
+
+/* Estilos para elementos Markdown dentro das mensagens do bot */
+.bot .message-content h1,
+.bot .message-content h2,
+.bot .message-content h3,
+.bot .message-content h4,
+.bot .message-content h5,
+.bot .message-content h6 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #24292e;
+}
+
+.bot .message-content h1 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+.bot .message-content h2 {
+    font-size: 1.3em;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+.bot .message-content h3 {
+    font-size: 1.2em;
+}
+
+.bot .message-content p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.bot .message-content ul,
+.bot .message-content ol {
+    padding-left: 2em;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.bot .message-content li {
+    margin-bottom: 4px;
+}
+
+.bot .message-content code {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+}
+
+.bot .message-content pre {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.bot .message-content blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+    margin: 0 0 16px 0;
+}
+
+.bot .message-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.bot .message-content table th,
+.bot .message-content table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+.bot .message-content table tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+}
+
+.bot .message-content table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.chat-input input:focus {
+    border-color: #4285f4;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 0 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.chat-input button:hover {
+    background-color: #3367d6;
+}
+
+.chat-input button:disabled {
+    background-color: #a0c3ff;
+    cursor: not-allowed;
+}
+
+.materia-selector {
+    display: none;
+    padding: 15px;
+    background-color: #f0f4f8;
+    border-top: 1px solid #e0e0e0;
+}
+
+.materia-selector.active {
+    display: block;
+}
+
+.materia-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.materia-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.materia-btn {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #4285f4;
+    color: #4285f4;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+}
+
+.materia-btn:hover {
+    background-color: #4285f4;
+    color: white;
+}
+
+.chat-actions {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    justify-content: space-between;
+}
+
+.chat-actions button {
+    padding: 8px 15px;
+    background-color: #f1f3f4;
+    color: #5f6368;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.chat-actions button:hover {
+    background-color: #e8eaed;
+}
+
+.chat-actions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#reset-btn {
+    background-color: #fbbc05;
+    color: white;
+    border: none;
+}
+
+#reset-btn:hover {
+    background-color: #f9a825;
+}
+
+#exit-btn {
+    background-color: #ea4335;
+    color: white;
+    border: none;
+}
+
+#exit-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .chat-container {
+        margin: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+    
+    .chat-header {
+        border-radius: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .materia-atual {
+        margin-top: 10px;
+    }
+    
+    .message-content {
+        max-width: 90%;
+    }
+    
+    .materia-buttons {
+        flex-direction: column;
+    }
+    
+    .materia-btn {
+        width: 100%;
+    }
+}
