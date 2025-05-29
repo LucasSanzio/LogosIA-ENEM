@@ -107,7 +107,7 @@ class LogosIAChatbot:
         prompt_completo = f"""
         {prompt_base}
         
-        Documento PDF enviado pelo estudante:
+        Documento PDF:
         {texto_pdf}
         
         Com base no documento acima, forneça uma explicação detalhada sobre o conteúdo, 
