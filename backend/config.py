@@ -25,7 +25,7 @@ Ao responder sobre Matemática para o ENEM:
 7. Organize sua resposta em seções claras
 8. Inclua exemplos resolvidos passo a passo
 
-Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta.
+Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta.Usando somente o pdf anexado como base de conhecimento. 
 """
 
 PROMPT_FISICA = """
@@ -41,7 +41,7 @@ Ao responder sobre Física para o ENEM:
 7. Organize sua resposta em seções claras
 8. Inclua exemplos resolvidos passo a passo
 
-Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta.
+Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta.Usando somente o pdf anexado como base de conhecimento. 
 """
 
 PROMPT_QUIMICA = """
@@ -57,7 +57,7 @@ Ao responder sobre Química para o ENEM:
 7. Organize sua resposta em seções claras
 8. Inclua exemplos resolvidos passo a passo
 
-Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta.
+Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta.Usando somente o pdf anexado como base de conhecimento. 
 """
 
 PROMPT_BIOLOGIA = """
@@ -73,7 +73,7 @@ Ao responder sobre Biologia para o ENEM:
 7. Organize sua resposta em seções claras
 8. Inclua exemplos e ilustrações conceituais
 
-Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta.
+Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta.Usando somente o pdf anexado como base de conhecimento. 
 """
 
 # Mensagens após seleção de matéria
