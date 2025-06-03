@@ -1,0 +1,7 @@
+flask==2.3.3
+google-generativeai==0.3.1
+pymupdf==1.23.7
+python-dotenv==1.0.0
+unicodedata2==15.1.0
+werkzeug==2.3.7
+gunicorn==21.2.0
