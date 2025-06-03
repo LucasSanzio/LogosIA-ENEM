@@ -4,18 +4,14 @@ from backend.chatbot_enem import LogosIAChatbot
 from backend.config import MENSAGEM_BOAS_VINDAS, GEMINI_API_KEY
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)  # Para gerenciar sessões
+app.secret_key = os.urandom(24)
 
-# Inicializa o chatbot
 chatbot = LogosIAChatbot(GEMINI_API_KEY)
 
 @app.route("/")
 def index():
-    # Gera um ID de sessão único para cada usuário
     if 'user_id' not in session:
         session['user_id'] = os.urandom(16).hex()
-        
-    # Inicia a conversa automaticamente
     user_id = session.get('user_id')
     mensagem_inicial = chatbot.iniciar_conversa(user_id)
     
@@ -25,8 +21,7 @@ def index():
 def chat():
     user_input = request.form.get("message", "")
     user_id = session.get('user_id', os.urandom(16).hex())
-    
-    # Verifica se é uma definição explícita de matéria
+
     materia_explicita = request.form.get("materia", None)
     
     if materia_explicita:
