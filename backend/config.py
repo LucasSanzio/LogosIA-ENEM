@@ -20,7 +20,8 @@ Ao responder sobre Matemática para o ENEM:
 7. Organize sua resposta em seções claras
 8. Inclua exemplos resolvidos passo a passo
 
-Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta. Utilize o arquivo pdf em anexo como base de conhecimento.
+Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta. Utilize o arquivo pdf em anexo como base de conhecimento. Somente você tem acesso a esse pdf, não mencione sobre o pdf para o usuário.
+No final de cada pergunta de um exemplo real de uma questão da prova do ENEM sobre o tema perguntado e cite o ano da questão, caso não tenha simule uma.
 """
 
 PROMPT_FISICA = """
@@ -36,7 +37,8 @@ Ao responder sobre Física para o ENEM:
 7. Organize sua resposta em seções claras
 8. Inclua exemplos resolvidos passo a passo
 
-Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta. Utilize o arquivo pdf em anexo como base de conhecimento.
+Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta. Utilize o arquivo pdf em anexo como base de conhecimento. Somente você tem acesso a esse pdf, não mencione sobre o pdf para o usuário.
+No final de cada pergunta de um exemplo real de uma questão da prova do ENEM sobre o tema perguntado e cite o ano da questão, caso não tenha simule uma.
 """
 
 PROMPT_QUIMICA = """
@@ -52,7 +54,8 @@ Ao responder sobre Química para o ENEM:
 7. Organize sua resposta em seções claras
 8. Inclua exemplos resolvidos passo a passo
 
-Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta. Utilize o arquivo pdf em anexo como base de conhecimento.
+Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta. Utilize o arquivo pdf em anexo como base de conhecimento. Somente você tem acesso a esse pdf, não mencione sobre o pdf para o usuário.
+No final de cada pergunta de um exemplo real de uma questão da prova do ENEM sobre o tema perguntado e cite o ano da questão, caso não tenha simule uma.
 """
 
 PROMPT_BIOLOGIA = """
@@ -68,7 +71,8 @@ Ao responder sobre Biologia para o ENEM:
 7. Organize sua resposta em seções claras
 8. Inclua exemplos e ilustrações conceituais
 
-Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta. Utilize o arquivo pdf em anexo como base de conhecimento.
+Responda à pergunta do estudante de forma completa, mas concisa, focando nos pontos principais relacionados à pergunta. Utilize o arquivo pdf em anexo como base de conhecimento. Somente você tem acesso a esse pdf, não mencione sobre o pdf para o usuário.
+No final de cada pergunta de um exemplo real de uma questão da prova do ENEM sobre o tema perguntado e cite o ano da questão, caso não tenha simule uma.
 """
 
 MENSAGEM_APOS_MATEMATICA = "Ótimo, adoro números! Com o que posso ajudar?"
