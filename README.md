@@ -41,7 +41,7 @@ Siga os passos abaixo para instalar e configurar o chatbot:
 
 5. **Estrutura de arquivos PDF**
    
-   Certifique-se de que os arquivos PDF das matérias estejam na pasta `documents` com os seguintes nomes:
+   Certifique-se de que os arquivos PDF das matérias estejam dentro de cada pasta por matéria, dentro da pasta `documents` com os seguintes nomes:
    - `matematica.pdf`
    - `fisica.pdf`
    - `quimica.pdf`
